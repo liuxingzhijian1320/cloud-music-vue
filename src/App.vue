@@ -3,7 +3,7 @@
 		<keep-alive>
 			<router-view></router-view>
 		</keep-alive>
-		<player v-show="songList.length > 0">
+		<player v-show="songList.length > 0 && !showDetail">
 		</Player>
 
 	</div>

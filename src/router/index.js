@@ -8,6 +8,7 @@ const songList = resolve => import('../views/songList/songList');
 const leaderBoard = resolve => import('../views/leaderBoard/leaderBoard');
 const hotSinger = resolve => import('../views/hotSinger/hotSinger');
 const playListDetail = resolve => import('../views/playListDetail/playListDetail');
+const playerDetail = resolve => import('../views/playerDetail/playerDetail');
 
 Vue.use(Router);
 
@@ -58,6 +59,11 @@ const router = new Router({
 			name: 'playListDetail',
 			path: '/playListDetail/:id',
 			component: playListDetail,
+		},
+		{
+			name: 'playerDetail',
+			path: '/playerDetail/:id',
+			component: playerDetail,
 		},
 		{
 			path: '*',
